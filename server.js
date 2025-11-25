@@ -11,3 +11,9 @@ app.listen(PORT, ()=>{
 })
 
 app.use('/posts', postsRouter)
+
+
+app.get('/', (req, res)=> {
+
+    res.json({posts})
+})
