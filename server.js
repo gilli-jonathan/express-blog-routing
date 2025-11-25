@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const PORT = 3000
-const posts = require('./posts')
+// const posts = require('./posts')
 
 //import post router
 const postsRouter = require('./routers/posts')
@@ -15,5 +15,5 @@ app.use('/posts', postsRouter)
 
 app.get('/', (req, res)=> {
 
-    res.json({posts})
+    res.jason('ciao')
 })
